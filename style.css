@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap');
+body {
+    font-family: "Exo 2", sans-serif;
+    background-color: #ffac8c;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 2% auto;
+    background: peachpuff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+p {
+    font-size: 18px;
+    color: #555;
+}
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+}
+button {
+    padding: 11px 15px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+}
+button:hover {
+    background-color: #4cae4c;
+    transition: background-color 0.3s;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+.con-2 {
+    display: none; /* Initially hide this div */
+    width: 500px;
+    margin: 2% auto;
+    background: peachpuff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+    .container, .con-2 {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10% auto; /* Center with some margin */
+        padding: 15px; /* Reduce padding */
+    }
+    h1 {
+        font-size: 24px; /* Smaller font size for the heading */
+    }
+    p {
+        font-size: 16px; /* Smaller font size for paragraph text */
+    }
+    input {
+        padding: 8px; /* Smaller padding for input fields */
+    }
+    button {
+        padding: 8px 10px; /* Adjust button size */
+        width: 70%; /* Wider button on mobile */
+    }
+}
